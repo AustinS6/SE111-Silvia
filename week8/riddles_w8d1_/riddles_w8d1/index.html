@@ -99,6 +99,7 @@
             <!--***EDIT THE HREF attribute to include your GitHub repo link-->
 
             <!--+1 BONUS POINT: instead of adding the href in the HTML line below, instead add the link via your in-document javascript - make it the first line inside of the <script></script>-->
+            <a id="gitHub-link" href="https://www.w3schools.com/howto/howto_js_redirect_webpage.asp">Back to Austin Silvia's GitHub Repo!</a>
             <!--<a id="gitHub-link" href="https://newwebpagebio.netlify.app/" target="_blank">Back to Austin Silvia's GitHub Repo!</a>-->
 
         </div><!--/ #header-->
@@ -196,7 +197,7 @@
     <script>
 
         //***BONUS OPPORTUNITY: see line 97 8D
-        //window.location.href = "https://newwebpagebio.netlify.app/";
+        document.querySelector("#gitHub-link").href="../../../w3_bio/index.html"
 
         //declare some global variables to hold the answers to your riddles
         //naming convention: 'a' for answer, '#'' corresponds with the question #
