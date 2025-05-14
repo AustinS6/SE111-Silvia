@@ -99,7 +99,7 @@
             <!--***EDIT THE HREF attribute to include your GitHub repo link-->
 
             <!--+1 BONUS POINT: instead of adding the href in the HTML line below, instead add the link via your in-document javascript - make it the first line inside of the <script></script>-->
-            <a id="gitHub-link" href="" target="_blank">Back to Austin Silvia's GitHub Repo!</a>
+            <!--<a id="gitHub-link" href="https://newwebpagebio.netlify.app/" target="_blank">Back to Austin Silvia's GitHub Repo!</a>-->
 
         </div><!--/ #header-->
 
@@ -125,7 +125,7 @@
             <!--QUESTION #1-->
             <div id="q-1" class="question-div">
 
-                <h4>A Computer Riddle</h4>
+                <h4 title="A Computer Joke">A Computer Joke</h4>
 
                 <h4 title="Passwords">Passeords</h4>
 
@@ -139,9 +139,9 @@
             <!--QUESTION #2-->
             <div id="q-2" class="question-div">
 
-                <h4>Traveling Riddle</h4>
+                <h4 title="Horror Braille">Horror Braille</h4>
 
-                <p id="question2" class="question">What can travel around the world without leaving its corner?</p>
+                <p id="question2" class="question">I started reading a horror story in braille.</p>
 
                 <h6 id="answer2" class="answer" onclick="reveal(2)"><span class="hover-color">Click Here for Answer!</span></h6>
 
@@ -154,9 +154,9 @@
             <!--***here is the reusable div, but empty for you to fill out with your first riddle-->
             <div id="q-3" class="question-div">
 
-                <h4>_RIDDLE_TITLE_</h4>
+                <h4 title="New Owner">New Owner</h4>
 
-                <p id="question3" class="question">_YOUR_FIRST_RIDDLE_HERE_</p>
+                <p id="question3" class="question">I took over as the new owner of Old McDonald's farm.</p>
 
                 <h6 id="answer3" class="answer" onclick="reveal(3)"><span class="hover-color">Click Here for Answer!</span></h6>
 
@@ -165,7 +165,16 @@
 
             <!--QUESTION #4-->
             <!--***for the final question, you're on your own ;] DON'T WORRY! You already have 4 examples above you on how to set it up!-->
+            <div id="q-4" class="question-div">
+                
+                <h4 title="Gravity">Gravity</h4>
 
+                <p id="question4" class="question">What did Newton think when he discovered gravity?</p>
+
+                <h6 id="answer4" class="answer" onclick="reveal(4)"><span class="hover-color">Click Here for Answer!</span></h6>
+
+                <hr>
+            </div>
 
 
 
@@ -176,7 +185,7 @@
         <div id="footer">
 
             <!--***ADD YOUR NAME TO THE FOOTER-->
-            <p>&copy; [_YOUR_NAME_HERE_] | W8D1 | SE111 [202440]</p>
+            <p>&copy; Austin Silvia | W8D1 | SE111 [202440]</p>
 
         </div><!--/ #footer-->
 
@@ -187,18 +196,18 @@
     <script>
 
         //***BONUS OPPORTUNITY: see line 97 8D
-
+        //window.location.href = "https://newwebpagebio.netlify.app/";
 
         //declare some global variables to hold the answers to your riddles
         //naming convention: 'a' for answer, '#'' corresponds with the question #
         //we start at 0 in computer science!
         var a0 = "I should've cooked it a aloha temperature"
         var a1 = "I grabbed a pen and paper and said, 'Thank God for that, what are they?'"
-        var a2 = "A stamp"
+        var a2 = "Something bad is about to happen, I can feel it."
 
         //***ADD YOUR OWN two riddle answers below
-        var a3
-        var a4
+        var a3 = "I'm the CEIEIO"
+        var a4 = "Shit is about to go down"
 
         /*
 
@@ -242,6 +251,8 @@
             if (num === 0) {answer = a0}
             if (num === 1) {answer = a1}
             if (num === 2) {answer = a2}
+            if (num === 3) {answer = a3}
+            if (num === 4) {answer = a4}
 
             
             //***ADD IN two more if statements to assign the a3 and a4 values!
