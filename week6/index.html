@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Austin" content="JavaScript Pay Calculator">
+        <meta name="description" content="JavaScript Pay Calculator">
+    </html>
+
+    <body>
+        <h1>JavaScript Pay Calculator</h1>
+
+        <div id="print">reference</div>
+
+        <script>
+            var tax = 0.2
+
+            var grossPay = prompt("What is the total amount of money you made in the past two weeks: ")
+
+            var uncleSam = grossPay * tax
+            
+            var netPay = grossPay - uncleSam
+
+            alert("Gross Pay: $"+grossPay)
+            alert("Uncle Sam's Share: $"+uncleSam)
+            alert("Net Pay: $"+netPay)
+
+            var print = document.querySelector('#print');
+            print.innerHTML='Gross Pay: $'+grossPay
+            print.innerHTML+='<br>Uncle Sam`s Share: $'+uncleSam
+            print.innerHTML+='<br>Net Pay: $'+netPay
+            
+        </script>
+    </body>
